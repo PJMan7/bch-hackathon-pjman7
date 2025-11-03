@@ -13,10 +13,6 @@
     "publish": "yarn workspaces run publish:public",
     "build": "yarn workspaces run build",
     "test": "yarn workspaces run test",
-    "clean": "rm -rf packages/**/dist",
-    "postinstall": "patch-package"
-  },
-  "dependencies": {
-    "patch-package": "^8.0.1"
+    "clean": "rm -rf packages/**/dist"
   }
 }
