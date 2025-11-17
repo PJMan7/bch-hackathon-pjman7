@@ -78,7 +78,7 @@ export default function P2PKHView({
             <input ref={recipientValueRef} defaultValue={address} placeholder="Recipient" id="recipientInput" className="border p-2 rounded-md mr-2 mt-2 text-black" />
             <button
               onClick={spendFromContract}
-              className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors bg-black hover:bg-gray-700 cursor-pointer mt-2"
+              className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors hover:bg-gray-700 cursor-pointer mt-2"
             >
               Spend
             </button>
@@ -89,10 +89,10 @@ export default function P2PKHView({
       {address && <><hr className="my-4" />
         <div>{`${!utxos?.length ? 'Deploy new contract instance' : 'Deploy more contract instances'}`}</div>
         <div className="flex flex-row">
-          <input ref={deployValueRef} defaultValue={1000} type="number" placeholder="Amount in satoshis" id="amountInput" className="border p-2 rounded-md mr-2 mt-2 text-black" />
+          <input ref={deployValueRef} defaultValue={1000} type="number" placeholder="Amount in satoshis" id="amountInput" className="border p-2 rounded-md mr-2 mt-2 text-black bg-white" />
           <button
             onClick={deployContract}
-            className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors bg-black hover:bg-gray-700 cursor-pointer mt-2"
+            className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors  hover:bg-[#0ac18e] bg-gray-700 cursor-pointer mt-2"
           >
             Deploy
           </button>

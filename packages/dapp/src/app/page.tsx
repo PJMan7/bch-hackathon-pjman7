@@ -62,7 +62,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <header className="flex w-full max-w-3xl pt-5 bg-white dark:bg-black sm:items-start">
           <div className="flex flex-col w-[95%]">
-            <div className="flex flex-row justify-center text-3xl mt-2 mb-5">BCH dApp quickstarter</div>
+            <div className="flex flex-row justify-center text-3xl mt-2 mb-5">EventCollect.Cash</div>
             <ConnectButton />
           </div>
         </header>
