@@ -345,11 +345,9 @@
   dependencies:
     "@bitauth/libauth" "^3.1.0-next.8"
 
-"@dapp-starter/contracts@link:./packages/contracts":
-  version "0.0.1"
-  dependencies:
-    "@bch-wc2/cashscript-signer" "^0.0.15"
-    "@bch-wc2/mainnet-js-signer" "^0.0.15"
+"@dapp-starter/contracts@link:./packages/dapp/packages/contracts":
+  version "0.0.0"
+  uid ""
 
 "@electrum-cash/debug-logs@^1.0.0":
   version "1.0.0"
