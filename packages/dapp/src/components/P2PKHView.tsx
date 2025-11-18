@@ -78,7 +78,7 @@ export default function P2PKHView({
             <input ref={recipientValueRef} defaultValue={address} placeholder="Recipient" id="recipientInput" className="border p-2 rounded-md mr-2 mt-2 text-black" />
             <button
               onClick={spendFromContract}
-              className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors hover:bg-gray-700 cursor-pointer mt-2"
+              className="px-4 py-2 rounded-md font-bold text-white text-sm transition-colors hover:bg-[#0ac18e] bg-gray-700 cursor-pointer mt-2"
             >
               Spend
             </button>

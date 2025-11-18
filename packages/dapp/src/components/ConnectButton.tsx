@@ -68,7 +68,7 @@ const ConnectButton: React.FC = () => {
             className={`px-4 py-2 rounded-md font-bold text-white text-sm transition-colors ${
               loading
               ? 'bg-gray-400 cursor-not-allowed'
-              : 'bg-black hover:bg-gray-700 cursor-pointer'
+              : 'bg-gray-700  hover:bg-[#0AC18E] cursor-pointer'
             }`}
           >
             {loading ? 'Disconnecting...' : 'Disconnect'}
@@ -107,7 +107,7 @@ const ConnectButton: React.FC = () => {
             className={`px-4 py-2 rounded-md font-bold text-white text-sm transition-colors ${
               loading
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-black hover:bg-gray-700 cursor-pointer'
+                : 'bg-[#0AC18E] hover:bg-gray-700 cursor-pointer'
             }`}
           >
             {loading ? 'Connecting...' : 'Connect Wallet'}
