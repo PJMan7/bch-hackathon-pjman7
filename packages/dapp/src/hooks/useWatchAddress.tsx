@@ -1,4 +1,4 @@
-import { UtxoI, Wallet } from "mainnet-js";
+import { TestNetWallet, UtxoI } from "mainnet-js";
 import { useEffect, useState } from "react";
 
 export function useWatchAddress(address?: string, tokenId?: string) {
@@ -16,7 +16,7 @@ export function useWatchAddress(address?: string, tokenId?: string) {
     let cancelWatch: () => void;
 
     (async () => {
-      const wallet = await Wallet.watchOnly(address);
+      const wallet = await TestNetWallet.watchOnly(address);
 
       const callback = async () => {
         try {

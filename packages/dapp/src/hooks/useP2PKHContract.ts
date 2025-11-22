@@ -1,7 +1,7 @@
 import type { IConnector } from '@bch-wc2/interfaces';
 import { P2PKH } from "@dapp-starter/contracts";
 import { ElectrumNetworkProvider } from "cashscript";
-import { Wallet } from "mainnet-js";
+import { TestNetWallet } from "mainnet-js";
 import { useEffect, useState } from "react";
 
 export function useP2PKHContract(address?: string, connector?: IConnector) {
@@ -13,7 +13,7 @@ export function useP2PKHContract(address?: string, connector?: IConnector) {
     }
 
     (async () => {
-      const wallet = await Wallet.watchOnly(address);
+        const wallet = await TestNetWallet.watchOnly(address);
       const provider = new ElectrumNetworkProvider(undefined, {
         electrum: wallet.provider.electrum,
         manualConnectionManagement: true,
