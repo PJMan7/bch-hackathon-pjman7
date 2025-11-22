@@ -14,7 +14,7 @@ export function useP2PKHContract(address?: string, connector?: IConnector) {
 
     (async () => {
         const wallet = await TestNetWallet.watchOnly(address);
-      const provider = new ElectrumNetworkProvider(undefined, {
+      const provider = new ElectrumNetworkProvider('chipnet', {
         electrum: wallet.provider.electrum,
         manualConnectionManagement: true,
       });
