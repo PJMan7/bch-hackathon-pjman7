@@ -3,8 +3,6 @@
 import ConnectButton from "@/components/ConnectButton";
 import FinishTransactionModal from "@/components/FinishTransactionModal";
 import P2PKHView from "@/components/P2PKHView";
-import EventMint from "@/components/EventMint";
-import WalletNFTs from "@/components/WalletNFTs";
 import { IConnector, WcSignTransactionRequest } from "@bch-wc2/interfaces";
 import { useWeb3ModalConnectorContext } from "@bch-wc2/web3modal-connector";
 import { decodeTransaction, hexToBin } from "@bitauth/libauth";
@@ -68,26 +66,15 @@ export default function Home() {
             <ConnectButton />
           </div>
         </header>
-
-
-        <main className="flex min-h-screen w-full max-w-3xl flex-col items-center bg-white dark:bg-black">
-          {/* Centered Mint Button - Horizontally & Vertically */}
-          <div className="flex items-center justify-center w-full mb-8">
-            <EventMint />
-          </div>
-          <WalletNFTs address={address} />
-          {/* P2PKHView - Stacked below, full width but centered */}
-          <div className="w-full flex justify-center">
-            <P2PKHView
-              address={address}
-              connector={wrappedConnector}
-              showError={showError}
-              showInfo={showInfo}
-            />
-          </div>
+        <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+          <P2PKHView
+            address={address}
+            connector={wrappedConnector}
+            showError={showError}
+            showInfo={showInfo}
+          />
+          <div className="Test"> Test</div>
         </main>
-
-
       </div>
     </div>
   );

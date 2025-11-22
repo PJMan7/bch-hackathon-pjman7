@@ -53,7 +53,7 @@ export default function P2PKHView({
     }
   }, [spendValueRef, p2pkh]);
 
-  return (
+    return (
     <div>
       {p2pkh && address && `Your personal contract address: ${p2pkh.contract.address}`}
       {p2pkh && address && !utxos?.length && (
